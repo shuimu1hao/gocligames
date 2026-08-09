@@ -429,6 +429,7 @@ func (gm *Game) usePill(k ItemKind) {
 
 // ---------- 存档 ----------
 
+// SaveData 存档数据（JSON 序列化）。
 type SaveData struct {
 	Layer    int
 	Pl       Player

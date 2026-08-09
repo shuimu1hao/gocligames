@@ -8,6 +8,7 @@ import (
 	"gocligames/engine"
 )
 
+// Bot 是自动玩家（AI 打榜/自测用，走游戏自身逻辑）。
 type Bot struct {
 	gm      *Game
 	frames  int

@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// Bot 是自动玩家（BFS 寻路 + 自动战斗/练级/通关）。
 type Bot struct {
 	gm        *Game
 	frames    int

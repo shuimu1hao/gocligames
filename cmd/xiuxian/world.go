@@ -116,6 +116,7 @@ var monsterDefs = []MonsterDef{
 
 // ---------- 物品 ----------
 
+// ItemKind 物品类型枚举。
 type ItemKind int
 
 const (
@@ -127,6 +128,7 @@ const (
 
 // ---------- 地图对象（怪/NPC/物品） ----------
 
+// ObjKind 世界对象类型枚举。
 type ObjKind int
 
 const (
@@ -135,6 +137,7 @@ const (
 	ObjItem
 )
 
+// Obj 世界对象（地图上的可交互元素）。
 type Obj struct {
 	X, Y   int
 	Ch     rune

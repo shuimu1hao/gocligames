@@ -31,6 +31,7 @@ const helpLine2 = "B江湖榜 H帮助 1金疮药 2大还丹 Q退出"
 
 // ---------- 玩家 ----------
 
+// Player 玩家状态（属性/装备/武功/任务进度）。
 type Player struct {
 	Name      string
 	Level     int
@@ -416,6 +417,7 @@ func (gm *Game) quickUse(k ItemKind) {
 
 // ---------- 存档 ----------
 
+// SaveData 存档数据（JSON 序列化）。
 type SaveData struct {
 	Region   string
 	PX, PY   int

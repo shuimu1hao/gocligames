@@ -19,6 +19,7 @@ const (
 	ItemScroll ItemKind = "scroll" // 天蚕神功（主线）
 )
 
+// ItemDef 物品定义（背包/商店数据表）。
 type ItemDef struct {
 	Kind  ItemKind
 	Name  string
@@ -62,6 +63,7 @@ func (e EquipSlot) String() string {
 	}
 }
 
+// EquipDef 装备定义（穿戴属性加成）。
 type EquipDef struct {
 	Name  string
 	Slot  EquipSlot
